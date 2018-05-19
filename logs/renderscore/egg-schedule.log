@@ -1,0 +1,18 @@
+2018-05-17 17:18:14,841 INFO 1247 [Timer] /Users/jinfan/workplace/renderscore/renderscore/node_modules/egg-logrotator/app/schedule/clean_log.js next time will execute at 2018-05-18 00:00:00.000
+2018-05-17 17:18:14,842 INFO 1247 [Timer] /Users/jinfan/workplace/renderscore/renderscore/node_modules/egg-logrotator/app/schedule/rotate_by_file.js next time will execute at 2018-05-18 00:00:01.000
+2018-05-17 17:55:37,710 INFO 2795 [Timer] /Users/jinfan/workplace/renderscore/renderscore/node_modules/egg-logrotator/app/schedule/clean_log.js next time will execute at 2018-05-18 00:00:00.000
+2018-05-17 17:55:37,711 INFO 2795 [Timer] /Users/jinfan/workplace/renderscore/renderscore/node_modules/egg-logrotator/app/schedule/rotate_by_file.js next time will execute at 2018-05-18 00:00:01.000
+2018-05-18 00:00:00,007 INFO 2795 [152657280000724472119030591] /Users/jinfan/workplace/renderscore/renderscore/node_modules/egg-logrotator/app/schedule/clean_log.js triggered, send random by agent
+2018-05-18 00:00:00,010 INFO 2795 [Timer] /Users/jinfan/workplace/renderscore/renderscore/node_modules/egg-logrotator/app/schedule/clean_log.js next time will execute at 2018-05-19 00:00:00.000
+2018-05-18 00:00:01,010 INFO 2795 [152657280101024473121538044] /Users/jinfan/workplace/renderscore/renderscore/node_modules/egg-logrotator/app/schedule/rotate_by_file.js triggered, send random by agent
+2018-05-18 00:00:01,012 INFO 2795 [Timer] /Users/jinfan/workplace/renderscore/renderscore/node_modules/egg-logrotator/app/schedule/rotate_by_file.js next time will execute at 2018-05-19 00:00:01.000
+2018-05-18 14:59:40,294 INFO 68315 [Timer] /Users/jinfan/workplace/renderscore/renderscore/node_modules/egg-logrotator/app/schedule/clean_log.js next time will execute at 2018-05-19 00:00:00.000
+2018-05-18 14:59:40,295 INFO 68315 [Timer] /Users/jinfan/workplace/renderscore/renderscore/node_modules/egg-logrotator/app/schedule/rotate_by_file.js next time will execute at 2018-05-19 00:00:01.000
+2018-05-18 17:44:23,283 INFO 74907 [Timer] /Users/jinfan/workplace/renderscore/renderscore/node_modules/egg-logrotator/app/schedule/clean_log.js next time will execute at 2018-05-19 00:00:00.000
+2018-05-18 17:44:23,283 INFO 74907 [Timer] /Users/jinfan/workplace/renderscore/renderscore/node_modules/egg-logrotator/app/schedule/rotate_by_file.js next time will execute at 2018-05-19 00:00:01.000
+2018-05-19 00:00:00,010 INFO 74907 [1526659200010110872121984005] /Users/jinfan/workplace/renderscore/renderscore/node_modules/egg-logrotator/app/schedule/clean_log.js triggered, send random by agent
+2018-05-19 00:00:00,013 INFO 74907 [Timer] /Users/jinfan/workplace/renderscore/renderscore/node_modules/egg-logrotator/app/schedule/clean_log.js next time will execute at 2018-05-20 00:00:00.000
+2018-05-19 00:00:01,004 INFO 74907 [1526659201004110873115797330] /Users/jinfan/workplace/renderscore/renderscore/node_modules/egg-logrotator/app/schedule/rotate_by_file.js triggered, send random by agent
+2018-05-19 00:00:01,006 INFO 74907 [Timer] /Users/jinfan/workplace/renderscore/renderscore/node_modules/egg-logrotator/app/schedule/rotate_by_file.js next time will execute at 2018-05-20 00:00:01.000
+2018-05-19 11:16:41,957 INFO 37515 [Timer] /Users/jinfan/workplace/renderscore/renderscore/node_modules/egg-logrotator/app/schedule/clean_log.js next time will execute at 2018-05-20 00:00:00.000
+2018-05-19 11:16:41,959 INFO 37515 [Timer] /Users/jinfan/workplace/renderscore/renderscore/node_modules/egg-logrotator/app/schedule/rotate_by_file.js next time will execute at 2018-05-20 00:00:01.000

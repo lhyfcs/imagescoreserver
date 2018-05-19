@@ -1,0 +1,304 @@
+{
+  "keys": "/Users/jinfan/workplace/renderscore/renderscore/config/config.default.js",
+  "view": {
+    "defaultViewEngine": "/Users/jinfan/workplace/renderscore/renderscore/config/config.default.js",
+    "mapping": {
+      ".tpl": "/Users/jinfan/workplace/renderscore/renderscore/config/config.default.js"
+    },
+    "defaultExtension": "/Users/jinfan/workplace/renderscore/renderscore/config/config.default.js",
+    "root": "/Users/jinfan/workplace/renderscore/renderscore/node_modules/egg-view/config/config.default.js",
+    "cache": "/Users/jinfan/workplace/renderscore/renderscore/node_modules/egg-view/config/config.local.js"
+  },
+  "middleware": "/Users/jinfan/workplace/renderscore/renderscore/config/config.default.js",
+  "mysql": {
+    "pageCount": "/Users/jinfan/workplace/renderscore/renderscore/config/config.default.js",
+    "startTime": "/Users/jinfan/workplace/renderscore/renderscore/config/config.default.js",
+    "client": {
+      "host": "/Users/jinfan/workplace/renderscore/renderscore/config/config.local.js",
+      "port": "/Users/jinfan/workplace/renderscore/renderscore/config/config.local.js",
+      "user": "/Users/jinfan/workplace/renderscore/renderscore/config/config.local.js",
+      "password": "/Users/jinfan/workplace/renderscore/renderscore/config/config.local.js",
+      "database": "/Users/jinfan/workplace/renderscore/renderscore/config/config.local.js"
+    },
+    "app": "/Users/jinfan/workplace/renderscore/renderscore/config/config.local.js",
+    "agent": "/Users/jinfan/workplace/renderscore/renderscore/config/config.local.js",
+    "default": {
+      "database": "/Users/jinfan/workplace/renderscore/renderscore/node_modules/egg-mysql/config/config.default.js",
+      "connectionLimit": "/Users/jinfan/workplace/renderscore/renderscore/node_modules/egg-mysql/config/config.default.js"
+    }
+  },
+  "image": {
+    "ignoretype": "/Users/jinfan/workplace/renderscore/renderscore/config/config.default.js"
+  },
+  "session": {
+    "maxAge": "/Users/jinfan/workplace/renderscore/renderscore/node_modules/egg-session/config/config.default.js",
+    "key": "/Users/jinfan/workplace/renderscore/renderscore/node_modules/egg-session/config/config.default.js",
+    "httpOnly": "/Users/jinfan/workplace/renderscore/renderscore/node_modules/egg-session/config/config.default.js",
+    "encrypt": "/Users/jinfan/workplace/renderscore/renderscore/node_modules/egg-session/config/config.default.js"
+  },
+  "security": {
+    "domainWhiteList": "/Users/jinfan/workplace/renderscore/renderscore/node_modules/egg-security/config/config.default.js",
+    "protocolWhiteList": "/Users/jinfan/workplace/renderscore/renderscore/node_modules/egg-security/config/config.default.js",
+    "defaultMiddleware": "/Users/jinfan/workplace/renderscore/renderscore/node_modules/egg-security/config/config.default.js",
+    "csrf": {
+      "enable": "/Users/jinfan/workplace/renderscore/renderscore/node_modules/egg-security/config/config.default.js",
+      "useSession": "/Users/jinfan/workplace/renderscore/renderscore/node_modules/egg-security/config/config.default.js",
+      "ignoreJSON": "/Users/jinfan/workplace/renderscore/renderscore/node_modules/egg-security/config/config.default.js",
+      "cookieName": "/Users/jinfan/workplace/renderscore/renderscore/node_modules/egg-security/config/config.default.js",
+      "sessionName": "/Users/jinfan/workplace/renderscore/renderscore/node_modules/egg-security/config/config.default.js",
+      "headerName": "/Users/jinfan/workplace/renderscore/renderscore/node_modules/egg-security/config/config.default.js",
+      "bodyName": "/Users/jinfan/workplace/renderscore/renderscore/node_modules/egg-security/config/config.default.js",
+      "queryName": "/Users/jinfan/workplace/renderscore/renderscore/node_modules/egg-security/config/config.default.js"
+    },
+    "xframe": {
+      "enable": "/Users/jinfan/workplace/renderscore/renderscore/node_modules/egg-security/config/config.default.js",
+      "value": "/Users/jinfan/workplace/renderscore/renderscore/node_modules/egg-security/config/config.default.js"
+    },
+    "hsts": {
+      "enable": "/Users/jinfan/workplace/renderscore/renderscore/node_modules/egg-security/config/config.local.js",
+      "maxAge": "/Users/jinfan/workplace/renderscore/renderscore/node_modules/egg-security/config/config.default.js",
+      "includeSubdomains": "/Users/jinfan/workplace/renderscore/renderscore/node_modules/egg-security/config/config.default.js"
+    },
+    "dta": {
+      "enable": "/Users/jinfan/workplace/renderscore/renderscore/node_modules/egg-security/config/config.default.js"
+    },
+    "methodnoallow": {
+      "enable": "/Users/jinfan/workplace/renderscore/renderscore/node_modules/egg-security/config/config.default.js"
+    },
+    "noopen": {
+      "enable": "/Users/jinfan/workplace/renderscore/renderscore/node_modules/egg-security/config/config.default.js"
+    },
+    "nosniff": {
+      "enable": "/Users/jinfan/workplace/renderscore/renderscore/node_modules/egg-security/config/config.default.js"
+    },
+    "referrerPolicy": {
+      "enable": "/Users/jinfan/workplace/renderscore/renderscore/node_modules/egg-security/config/config.default.js",
+      "value": "/Users/jinfan/workplace/renderscore/renderscore/node_modules/egg-security/config/config.default.js"
+    },
+    "xssProtection": {
+      "enable": "/Users/jinfan/workplace/renderscore/renderscore/node_modules/egg-security/config/config.default.js",
+      "value": "/Users/jinfan/workplace/renderscore/renderscore/node_modules/egg-security/config/config.default.js"
+    },
+    "csp": {
+      "enable": "/Users/jinfan/workplace/renderscore/renderscore/node_modules/egg-security/config/config.default.js",
+      "policy": "/Users/jinfan/workplace/renderscore/renderscore/node_modules/egg-security/config/config.default.js"
+    },
+    "ssrf": {
+      "ipBlackList": "/Users/jinfan/workplace/renderscore/renderscore/node_modules/egg-security/config/config.default.js",
+      "checkAddress": "/Users/jinfan/workplace/renderscore/renderscore/node_modules/egg-security/config/config.default.js"
+    }
+  },
+  "helper": {
+    "shtml": "/Users/jinfan/workplace/renderscore/renderscore/node_modules/egg-security/config/config.default.js"
+  },
+  "jsonp": {
+    "limit": "/Users/jinfan/workplace/renderscore/renderscore/node_modules/egg-jsonp/config/config.default.js",
+    "callback": "/Users/jinfan/workplace/renderscore/renderscore/node_modules/egg-jsonp/config/config.default.js",
+    "csrf": "/Users/jinfan/workplace/renderscore/renderscore/node_modules/egg-jsonp/config/config.default.js"
+  },
+  "onerror": {
+    "errorPageUrl": "/Users/jinfan/workplace/renderscore/renderscore/node_modules/egg-onerror/config/config.default.js",
+    "appErrorFilter": "/Users/jinfan/workplace/renderscore/renderscore/node_modules/egg-onerror/config/config.default.js"
+  },
+  "i18n": {
+    "defaultLocale": "/Users/jinfan/workplace/renderscore/renderscore/node_modules/egg-i18n/config/config.default.js",
+    "dirs": "/Users/jinfan/workplace/renderscore/renderscore/node_modules/egg-i18n/config/config.default.js",
+    "queryField": "/Users/jinfan/workplace/renderscore/renderscore/node_modules/egg-i18n/config/config.default.js",
+    "cookieField": "/Users/jinfan/workplace/renderscore/renderscore/node_modules/egg-i18n/config/config.default.js",
+    "cookieMaxAge": "/Users/jinfan/workplace/renderscore/renderscore/node_modules/egg-i18n/config/config.default.js"
+  },
+  "watcher": {
+    "type": "/Users/jinfan/workplace/renderscore/renderscore/node_modules/egg-watcher/config/config.local.js",
+    "eventSources": {
+      "default": "/Users/jinfan/workplace/renderscore/renderscore/node_modules/egg-watcher/config/config.default.js",
+      "development": "/Users/jinfan/workplace/renderscore/renderscore/node_modules/egg-watcher/config/config.default.js"
+    }
+  },
+  "multipart": {
+    "autoFields": "/Users/jinfan/workplace/renderscore/renderscore/node_modules/egg-multipart/config/config.default.js",
+    "defaultCharset": "/Users/jinfan/workplace/renderscore/renderscore/node_modules/egg-multipart/config/config.default.js",
+    "fieldNameSize": "/Users/jinfan/workplace/renderscore/renderscore/node_modules/egg-multipart/config/config.default.js",
+    "fieldSize": "/Users/jinfan/workplace/renderscore/renderscore/node_modules/egg-multipart/config/config.default.js",
+    "fields": "/Users/jinfan/workplace/renderscore/renderscore/node_modules/egg-multipart/config/config.default.js",
+    "fileSize": "/Users/jinfan/workplace/renderscore/renderscore/node_modules/egg-multipart/config/config.default.js",
+    "files": "/Users/jinfan/workplace/renderscore/renderscore/node_modules/egg-multipart/config/config.default.js",
+    "fileExtensions": "/Users/jinfan/workplace/renderscore/renderscore/node_modules/egg-multipart/config/config.default.js",
+    "whitelist": "/Users/jinfan/workplace/renderscore/renderscore/node_modules/egg-multipart/config/config.default.js"
+  },
+  "development": {
+    "watchDirs": "/Users/jinfan/workplace/renderscore/renderscore/node_modules/egg-development/config/config.default.js",
+    "ignoreDirs": "/Users/jinfan/workplace/renderscore/renderscore/node_modules/egg-development/config/config.default.js",
+    "fastReady": "/Users/jinfan/workplace/renderscore/renderscore/node_modules/egg-development/config/config.default.js",
+    "reloadOnDebug": "/Users/jinfan/workplace/renderscore/renderscore/node_modules/egg-development/config/config.default.js",
+    "overrideDefault": "/Users/jinfan/workplace/renderscore/renderscore/node_modules/egg-development/config/config.default.js"
+  },
+  "customLogger": {
+    "scheduleLogger": {
+      "consoleLevel": "/Users/jinfan/workplace/renderscore/renderscore/node_modules/egg-schedule/config/config.default.js",
+      "file": "/Users/jinfan/workplace/renderscore/renderscore/node_modules/egg-schedule/config/config.default.js"
+    }
+  },
+  "logrotator": {
+    "filesRotateByHour": "/Users/jinfan/workplace/renderscore/renderscore/node_modules/egg-logrotator/config/config.default.js",
+    "hourDelimiter": "/Users/jinfan/workplace/renderscore/renderscore/node_modules/egg-logrotator/config/config.default.js",
+    "filesRotateBySize": "/Users/jinfan/workplace/renderscore/renderscore/node_modules/egg-logrotator/config/config.default.js",
+    "maxFileSize": "/Users/jinfan/workplace/renderscore/renderscore/node_modules/egg-logrotator/config/config.default.js",
+    "maxFiles": "/Users/jinfan/workplace/renderscore/renderscore/node_modules/egg-logrotator/config/config.default.js",
+    "rotateDuration": "/Users/jinfan/workplace/renderscore/renderscore/node_modules/egg-logrotator/config/config.default.js",
+    "maxDays": "/Users/jinfan/workplace/renderscore/renderscore/node_modules/egg-logrotator/config/config.default.js"
+  },
+  "static": {
+    "prefix": "/Users/jinfan/workplace/renderscore/renderscore/node_modules/egg-static/config/config.default.js",
+    "dir": "/Users/jinfan/workplace/renderscore/renderscore/node_modules/egg-static/config/config.default.js",
+    "dynamic": "/Users/jinfan/workplace/renderscore/renderscore/node_modules/egg-static/config/config.default.js",
+    "preload": "/Users/jinfan/workplace/renderscore/renderscore/node_modules/egg-static/config/config.default.js",
+    "buffer": "/Users/jinfan/workplace/renderscore/renderscore/node_modules/egg-static/config/config.default.js",
+    "maxFiles": "/Users/jinfan/workplace/renderscore/renderscore/node_modules/egg-static/config/config.default.js"
+  },
+  "nunjucks": {
+    "autoescape": "/Users/jinfan/workplace/renderscore/renderscore/node_modules/egg-view-nunjucks/config/config.default.js",
+    "throwOnUndefined": "/Users/jinfan/workplace/renderscore/renderscore/node_modules/egg-view-nunjucks/config/config.default.js",
+    "trimBlocks": "/Users/jinfan/workplace/renderscore/renderscore/node_modules/egg-view-nunjucks/config/config.default.js",
+    "lstripBlocks": "/Users/jinfan/workplace/renderscore/renderscore/node_modules/egg-view-nunjucks/config/config.default.js",
+    "cache": "/Users/jinfan/workplace/renderscore/renderscore/node_modules/egg-view-nunjucks/config/config.local.js"
+  },
+  "env": "/Users/jinfan/workplace/renderscore/renderscore/node_modules/egg/config/config.default.js",
+  "name": "/Users/jinfan/workplace/renderscore/renderscore/node_modules/egg/config/config.default.js",
+  "proxy": "/Users/jinfan/workplace/renderscore/renderscore/node_modules/egg/config/config.default.js",
+  "protocolHeaders": "/Users/jinfan/workplace/renderscore/renderscore/node_modules/egg/config/config.default.js",
+  "ipHeaders": "/Users/jinfan/workplace/renderscore/renderscore/node_modules/egg/config/config.default.js",
+  "hostHeaders": "/Users/jinfan/workplace/renderscore/renderscore/node_modules/egg/config/config.default.js",
+  "pkg": {
+    "name": "/Users/jinfan/workplace/renderscore/renderscore/node_modules/egg/config/config.default.js",
+    "version": "/Users/jinfan/workplace/renderscore/renderscore/node_modules/egg/config/config.default.js",
+    "description": "/Users/jinfan/workplace/renderscore/renderscore/node_modules/egg/config/config.default.js",
+    "private": "/Users/jinfan/workplace/renderscore/renderscore/node_modules/egg/config/config.default.js",
+    "dependencies": {
+      "egg": "/Users/jinfan/workplace/renderscore/renderscore/node_modules/egg/config/config.default.js",
+      "egg-mysql": "/Users/jinfan/workplace/renderscore/renderscore/node_modules/egg/config/config.default.js",
+      "egg-scripts": "/Users/jinfan/workplace/renderscore/renderscore/node_modules/egg/config/config.default.js",
+      "egg-view-nunjucks": "/Users/jinfan/workplace/renderscore/renderscore/node_modules/egg/config/config.default.js"
+    },
+    "devDependencies": {
+      "autod": "/Users/jinfan/workplace/renderscore/renderscore/node_modules/egg/config/config.default.js",
+      "autod-egg": "/Users/jinfan/workplace/renderscore/renderscore/node_modules/egg/config/config.default.js",
+      "egg-bin": "/Users/jinfan/workplace/renderscore/renderscore/node_modules/egg/config/config.default.js",
+      "egg-ci": "/Users/jinfan/workplace/renderscore/renderscore/node_modules/egg/config/config.default.js",
+      "egg-mock": "/Users/jinfan/workplace/renderscore/renderscore/node_modules/egg/config/config.default.js",
+      "eslint": "/Users/jinfan/workplace/renderscore/renderscore/node_modules/egg/config/config.default.js",
+      "eslint-config-egg": "/Users/jinfan/workplace/renderscore/renderscore/node_modules/egg/config/config.default.js",
+      "webstorm-disable-index": "/Users/jinfan/workplace/renderscore/renderscore/node_modules/egg/config/config.default.js"
+    },
+    "engines": {
+      "node": "/Users/jinfan/workplace/renderscore/renderscore/node_modules/egg/config/config.default.js"
+    },
+    "scripts": {
+      "start": "/Users/jinfan/workplace/renderscore/renderscore/node_modules/egg/config/config.default.js",
+      "stop": "/Users/jinfan/workplace/renderscore/renderscore/node_modules/egg/config/config.default.js",
+      "dev": "/Users/jinfan/workplace/renderscore/renderscore/node_modules/egg/config/config.default.js",
+      "debug": "/Users/jinfan/workplace/renderscore/renderscore/node_modules/egg/config/config.default.js",
+      "test": "/Users/jinfan/workplace/renderscore/renderscore/node_modules/egg/config/config.default.js",
+      "test-local": "/Users/jinfan/workplace/renderscore/renderscore/node_modules/egg/config/config.default.js",
+      "cov": "/Users/jinfan/workplace/renderscore/renderscore/node_modules/egg/config/config.default.js",
+      "lint": "/Users/jinfan/workplace/renderscore/renderscore/node_modules/egg/config/config.default.js",
+      "ci": "/Users/jinfan/workplace/renderscore/renderscore/node_modules/egg/config/config.default.js",
+      "autod": "/Users/jinfan/workplace/renderscore/renderscore/node_modules/egg/config/config.default.js"
+    },
+    "ci": {
+      "version": "/Users/jinfan/workplace/renderscore/renderscore/node_modules/egg/config/config.default.js"
+    },
+    "repository": {
+      "type": "/Users/jinfan/workplace/renderscore/renderscore/node_modules/egg/config/config.default.js",
+      "url": "/Users/jinfan/workplace/renderscore/renderscore/node_modules/egg/config/config.default.js"
+    },
+    "author": "/Users/jinfan/workplace/renderscore/renderscore/node_modules/egg/config/config.default.js",
+    "license": "/Users/jinfan/workplace/renderscore/renderscore/node_modules/egg/config/config.default.js"
+  },
+  "baseDir": "/Users/jinfan/workplace/renderscore/renderscore/node_modules/egg/config/config.default.js",
+  "HOME": "/Users/jinfan/workplace/renderscore/renderscore/node_modules/egg/config/config.default.js",
+  "rundir": "/Users/jinfan/workplace/renderscore/renderscore/node_modules/egg/config/config.default.js",
+  "dump": {
+    "ignore": "/Users/jinfan/workplace/renderscore/renderscore/node_modules/egg/config/config.default.js"
+  },
+  "confusedConfigurations": {
+    "bodyparser": "/Users/jinfan/workplace/renderscore/renderscore/node_modules/egg/config/config.default.js",
+    "notFound": "/Users/jinfan/workplace/renderscore/renderscore/node_modules/egg/config/config.default.js",
+    "sitefile": "/Users/jinfan/workplace/renderscore/renderscore/node_modules/egg/config/config.default.js",
+    "middlewares": "/Users/jinfan/workplace/renderscore/renderscore/node_modules/egg/config/config.default.js",
+    "httpClient": "/Users/jinfan/workplace/renderscore/renderscore/node_modules/egg/config/config.default.js"
+  },
+  "notfound": {
+    "pageUrl": "/Users/jinfan/workplace/renderscore/renderscore/node_modules/egg/config/config.default.js"
+  },
+  "siteFile": {
+    "/favicon.ico": "/Users/jinfan/workplace/renderscore/renderscore/node_modules/egg/config/config.default.js"
+  },
+  "bodyParser": {
+    "enable": "/Users/jinfan/workplace/renderscore/renderscore/node_modules/egg/config/config.default.js",
+    "encoding": "/Users/jinfan/workplace/renderscore/renderscore/node_modules/egg/config/config.default.js",
+    "formLimit": "/Users/jinfan/workplace/renderscore/renderscore/node_modules/egg/config/config.default.js",
+    "jsonLimit": "/Users/jinfan/workplace/renderscore/renderscore/node_modules/egg/config/config.default.js",
+    "strict": "/Users/jinfan/workplace/renderscore/renderscore/node_modules/egg/config/config.default.js",
+    "queryString": {
+      "arrayLimit": "/Users/jinfan/workplace/renderscore/renderscore/node_modules/egg/config/config.default.js",
+      "depth": "/Users/jinfan/workplace/renderscore/renderscore/node_modules/egg/config/config.default.js",
+      "parameterLimit": "/Users/jinfan/workplace/renderscore/renderscore/node_modules/egg/config/config.default.js"
+    }
+  },
+  "logger": {
+    "dir": "/Users/jinfan/workplace/renderscore/renderscore/node_modules/egg/config/config.default.js",
+    "encoding": "/Users/jinfan/workplace/renderscore/renderscore/node_modules/egg/config/config.default.js",
+    "env": "/Users/jinfan/workplace/renderscore/renderscore/node_modules/egg/config/config.default.js",
+    "level": "/Users/jinfan/workplace/renderscore/renderscore/node_modules/egg/config/config.default.js",
+    "consoleLevel": "/Users/jinfan/workplace/renderscore/renderscore/node_modules/egg/config/config.default.js",
+    "disableConsoleAfterReady": "/Users/jinfan/workplace/renderscore/renderscore/node_modules/egg/config/config.default.js",
+    "outputJSON": "/Users/jinfan/workplace/renderscore/renderscore/node_modules/egg/config/config.default.js",
+    "buffer": "/Users/jinfan/workplace/renderscore/renderscore/node_modules/egg/config/config.default.js",
+    "appLogName": "/Users/jinfan/workplace/renderscore/renderscore/node_modules/egg/config/config.default.js",
+    "coreLogName": "/Users/jinfan/workplace/renderscore/renderscore/node_modules/egg/config/config.default.js",
+    "agentLogName": "/Users/jinfan/workplace/renderscore/renderscore/node_modules/egg/config/config.default.js",
+    "errorLogName": "/Users/jinfan/workplace/renderscore/renderscore/node_modules/egg/config/config.default.js",
+    "coreLogger": {
+      "consoleLevel": "/Users/jinfan/workplace/renderscore/renderscore/node_modules/egg/config/config.local.js"
+    },
+    "allowDebugAtProd": "/Users/jinfan/workplace/renderscore/renderscore/node_modules/egg/config/config.default.js"
+  },
+  "httpclient": {
+    "enableDNSCache": "/Users/jinfan/workplace/renderscore/renderscore/node_modules/egg/config/config.default.js",
+    "dnsCacheMaxLength": "/Users/jinfan/workplace/renderscore/renderscore/node_modules/egg/config/config.default.js",
+    "dnsCacheMaxAge": "/Users/jinfan/workplace/renderscore/renderscore/node_modules/egg/config/config.default.js",
+    "request": {
+      "timeout": "/Users/jinfan/workplace/renderscore/renderscore/node_modules/egg/config/config.default.js"
+    },
+    "httpAgent": {
+      "keepAlive": "/Users/jinfan/workplace/renderscore/renderscore/node_modules/egg/config/config.default.js",
+      "freeSocketKeepAliveTimeout": "/Users/jinfan/workplace/renderscore/renderscore/node_modules/egg/config/config.default.js",
+      "maxSockets": "/Users/jinfan/workplace/renderscore/renderscore/node_modules/egg/config/config.default.js",
+      "maxFreeSockets": "/Users/jinfan/workplace/renderscore/renderscore/node_modules/egg/config/config.default.js"
+    },
+    "httpsAgent": {
+      "keepAlive": "/Users/jinfan/workplace/renderscore/renderscore/node_modules/egg/config/config.default.js",
+      "freeSocketKeepAliveTimeout": "/Users/jinfan/workplace/renderscore/renderscore/node_modules/egg/config/config.default.js",
+      "maxSockets": "/Users/jinfan/workplace/renderscore/renderscore/node_modules/egg/config/config.default.js",
+      "maxFreeSockets": "/Users/jinfan/workplace/renderscore/renderscore/node_modules/egg/config/config.default.js"
+    }
+  },
+  "meta": {
+    "enable": "/Users/jinfan/workplace/renderscore/renderscore/node_modules/egg/config/config.default.js",
+    "logging": "/Users/jinfan/workplace/renderscore/renderscore/node_modules/egg/config/config.default.js"
+  },
+  "coreMiddleware": "/Users/jinfan/workplace/renderscore/renderscore/node_modules/egg/config/config.default.js",
+  "workerStartTimeout": "/Users/jinfan/workplace/renderscore/renderscore/node_modules/egg/config/config.default.js",
+  "cluster": {
+    "listen": {
+      "path": "/Users/jinfan/workplace/renderscore/renderscore/node_modules/egg/config/config.default.js",
+      "port": "/Users/jinfan/workplace/renderscore/renderscore/node_modules/egg/config/config.default.js",
+      "hostname": "/Users/jinfan/workplace/renderscore/renderscore/node_modules/egg/config/config.default.js"
+    }
+  },
+  "clusterClient": {
+    "maxWaitTime": "/Users/jinfan/workplace/renderscore/renderscore/node_modules/egg/config/config.default.js",
+    "responseTimeout": "/Users/jinfan/workplace/renderscore/renderscore/node_modules/egg/config/config.default.js"
+  },
+  "onClientError": "/Users/jinfan/workplace/renderscore/renderscore/node_modules/egg/config/config.default.js"
+}

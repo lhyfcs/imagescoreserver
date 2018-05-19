@@ -1,0 +1,705 @@
+2018-05-17 17:20:13,447 ERROR 1247 nodejs.ClusterClientNoResponseError: client no response in 78711ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout.Leader._heartbeatTimer.setInterval [as _onTimeout] (/Users/jinfan/workplace/renderscore/renderscore/node_modules/cluster-client/lib/leader.js:74:23)
+    at ontimeout (timers.js:475:11)
+    at tryOnTimeout (timers.js:310:5)
+    at Timer.listOnTimeout (timers.js:270:5)
+name: 'ClusterClientNoResponseError'
+pid: 1247
+hostname: jinfandeiMac.local
+
+2018-05-17 17:23:37,127 ERROR 1543 [-/::1/-/42638ms GET /6980076d-3ed7-49c3-8ce6-a4c2cfb1d607] nodejs.TypeError: ctx.app.config.mysql.query is not a function
+    at HomeController.show (/Users/jinfan/workplace/renderscore/renderscore/app/controller/home.js:13:47)
+    at Object.callFn (/Users/jinfan/workplace/renderscore/renderscore/node_modules/egg-core/lib/utils/index.js:36:21)
+    at Object.classControllerMiddleware (/Users/jinfan/workplace/renderscore/renderscore/node_modules/egg-core/lib/loader/mixin/controller.js:84:20)
+    at Object.callFn (/Users/jinfan/workplace/renderscore/renderscore/node_modules/egg-core/lib/utils/index.js:36:21)
+    at wrappedController (/Users/jinfan/workplace/renderscore/renderscore/node_modules/egg-core/lib/utils/router.js:322:18)
+    at dispatch (/Users/jinfan/workplace/renderscore/renderscore/node_modules/koa-router/node_modules/koa-compose/index.js:44:32)
+    at next (/Users/jinfan/workplace/renderscore/renderscore/node_modules/koa-router/node_modules/koa-compose/index.js:45:18)
+    at /Users/jinfan/workplace/renderscore/renderscore/node_modules/koa-router/lib/router.js:346:16
+    at dispatch (/Users/jinfan/workplace/renderscore/renderscore/node_modules/koa-router/node_modules/koa-compose/index.js:44:32)
+    at /Users/jinfan/workplace/renderscore/renderscore/node_modules/koa-router/node_modules/koa-compose/index.js:36:12
+
+pid: 1543
+hostname: jinfandeiMac.local
+
+2018-05-17 17:26:09,426 ERROR 1772 [-/::1/-/66ms GET /6980076d-3ed7-49c3-8ce6-a4c2cfb1d607] nodejs.ER_PARSE_ERRORError: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'renderjob' at line 1
+    at Query.Sequence._packetToError (/Users/jinfan/workplace/renderscore/renderscore/node_modules/mysql/lib/protocol/sequences/Sequence.js:52:14)
+    at Query.ErrorPacket (/Users/jinfan/workplace/renderscore/renderscore/node_modules/mysql/lib/protocol/sequences/Query.js:77:18)
+    at Protocol._parsePacket (/Users/jinfan/workplace/renderscore/renderscore/node_modules/mysql/lib/protocol/Protocol.js:279:23)
+    at Parser.write (/Users/jinfan/workplace/renderscore/renderscore/node_modules/mysql/lib/protocol/Parser.js:76:12)
+    at Protocol.write (/Users/jinfan/workplace/renderscore/renderscore/node_modules/mysql/lib/protocol/Protocol.js:39:16)
+    at Socket.<anonymous> (/Users/jinfan/workplace/renderscore/renderscore/node_modules/mysql/lib/Connection.js:103:28)
+    at emitOne (events.js:116:13)
+    at Socket.emit (events.js:211:7)
+    at addChunk (_stream_readable.js:263:12)
+    at readableAddChunk (_stream_readable.js:250:11)
+    --------------------
+    at Pool.query (/Users/jinfan/workplace/renderscore/renderscore/node_modules/mysql/lib/Pool.js:199:23)
+    at /Users/jinfan/workplace/renderscore/renderscore/node_modules/ali-rds/node_modules/pify/index.js:29:7
+    at new Promise (<anonymous>)
+    at Pool.<anonymous> (/Users/jinfan/workplace/renderscore/renderscore/node_modules/ali-rds/node_modules/pify/index.js:12:10)
+    at Pool.ret [as query] (/Users/jinfan/workplace/renderscore/renderscore/node_modules/ali-rds/node_modules/pify/index.js:56:34)
+    at RDSClient.proto._query (/Users/jinfan/workplace/renderscore/renderscore/node_modules/ali-rds/lib/client.js:34:20)
+    at RDSClient.proto.query (/Users/jinfan/workplace/renderscore/renderscore/node_modules/ali-rds/lib/operator.js:54:29)
+    at proto.query.next (<anonymous>)
+    at onFulfilled (/Users/jinfan/workplace/renderscore/renderscore/node_modules/co/index.js:65:19)
+    at /Users/jinfan/workplace/renderscore/renderscore/node_modules/co/index.js:54:5
+    sql: renderjob
+code: 'ER_PARSE_ERROR'
+errno: 1064
+sqlMessage: 'You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near \'renderjob\' at line 1'
+sqlState: '42000'
+index: 0
+sql: 'renderjob'
+name: 'ER_PARSE_ERRORError'
+pid: 1772
+hostname: jinfandeiMac.local
+
+2018-05-17 17:29:15,183 ERROR 1921 [-/::1/-/30055ms GET /6980076d-3ed7-49c3-8ce6-a4c2cfb1d607] nodejs.ETIMEDOUTError: read ETIMEDOUT
+    at _errnoException (util.js:1024:11)
+    at TCP.onread (net.js:615:25)
+    --------------------
+    at Pool.query (/Users/jinfan/workplace/renderscore/renderscore/node_modules/mysql/lib/Pool.js:199:23)
+    at /Users/jinfan/workplace/renderscore/renderscore/node_modules/ali-rds/node_modules/pify/index.js:29:7
+    at new Promise (<anonymous>)
+    at Pool.<anonymous> (/Users/jinfan/workplace/renderscore/renderscore/node_modules/ali-rds/node_modules/pify/index.js:12:10)
+    at Pool.ret [as query] (/Users/jinfan/workplace/renderscore/renderscore/node_modules/ali-rds/node_modules/pify/index.js:56:34)
+    at RDSClient.proto._query (/Users/jinfan/workplace/renderscore/renderscore/node_modules/ali-rds/lib/client.js:34:20)
+    at RDSClient.proto.query (/Users/jinfan/workplace/renderscore/renderscore/node_modules/ali-rds/lib/operator.js:54:29)
+    at proto.query.next (<anonymous>)
+    at onFulfilled (/Users/jinfan/workplace/renderscore/renderscore/node_modules/co/index.js:65:19)
+    at /Users/jinfan/workplace/renderscore/renderscore/node_modules/co/index.js:54:5
+    sql: SELECT * FROM `renderjob`
+code: 'ETIMEDOUT'
+errno: 'ETIMEDOUT'
+syscall: 'read'
+fatal: true
+name: 'ETIMEDOUTError'
+pid: 1921
+hostname: jinfandeiMac.local
+
+2018-05-17 17:57:36,278 ERROR 2795 nodejs.ClusterClientNoResponseError: client no response in 62271ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout.Leader._heartbeatTimer.setInterval [as _onTimeout] (/Users/jinfan/workplace/renderscore/renderscore/node_modules/cluster-client/lib/leader.js:74:23)
+    at ontimeout (timers.js:475:11)
+    at tryOnTimeout (timers.js:310:5)
+    at Timer.listOnTimeout (timers.js:270:5)
+name: 'ClusterClientNoResponseError'
+pid: 2795
+hostname: jinfandeiMac.local
+
+2018-05-17 17:58:16,279 ERROR 2795 nodejs.ClusterClientNoResponseError: client no response in 72889ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout.Leader._heartbeatTimer.setInterval [as _onTimeout] (/Users/jinfan/workplace/renderscore/renderscore/node_modules/cluster-client/lib/leader.js:74:23)
+    at ontimeout (timers.js:475:11)
+    at tryOnTimeout (timers.js:310:5)
+    at Timer.listOnTimeout (timers.js:270:5)
+name: 'ClusterClientNoResponseError'
+pid: 2795
+hostname: jinfandeiMac.local
+
+2018-05-17 18:00:16,297 ERROR 2795 nodejs.ClusterClientNoResponseError: client no response in 61773ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout.Leader._heartbeatTimer.setInterval [as _onTimeout] (/Users/jinfan/workplace/renderscore/renderscore/node_modules/cluster-client/lib/leader.js:74:23)
+    at ontimeout (timers.js:475:11)
+    at tryOnTimeout (timers.js:310:5)
+    at Timer.listOnTimeout (timers.js:270:5)
+name: 'ClusterClientNoResponseError'
+pid: 2795
+hostname: jinfandeiMac.local
+
+2018-05-17 18:01:05,536 ERROR 3026 A client (undefined:NaN) error [ECONNRESET] occurred: read ECONNRESET
+2018-05-18 09:52:59,866 ERROR 59739 [-/::1/-/70ms GET /fb723b3d-82d1-4bab-8ae2-1903c1fddf31] nodejs.TypeError: ctx.addFilter is not a function
+    at HomeController.show (/Users/jinfan/workplace/renderscore/renderscore/app/controller/home.js:15:9)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:188:7)
+
+pid: 59739
+hostname: jinfandeiMac.local
+
+2018-05-18 10:00:03,521 ERROR 60234 [-/::1/-/2285ms GET /fb723b3d-82d1-4bab-8ae2-1903c1fddf31] nodejs.Template render error: Error: Unable to call `onSubmit`, which is undefined or falsey
+    at Object._prettifyError (/Users/jinfan/workplace/renderscore/renderscore/node_modules/nunjucks/src/lib.js:35:11)
+    at /Users/jinfan/workplace/renderscore/renderscore/node_modules/nunjucks/src/environment.js:547:19
+    at eval (eval at _compile (/Users/jinfan/workplace/renderscore/renderscore/node_modules/nunjucks/src/environment.js:617:18), <anonymous>:10:11)
+    at b_content (eval at _compile (/Users/jinfan/workplace/renderscore/renderscore/node_modules/nunjucks/src/environment.js:617:18), <anonymous>:65:3)
+    at Template.root [as rootRenderFunc] (eval at _compile (/Users/jinfan/workplace/renderscore/renderscore/node_modules/nunjucks/src/environment.js:617:18), <anonymous>:9:86)
+    at eval (eval at _compile (/Users/jinfan/workplace/renderscore/renderscore/node_modules/nunjucks/src/environment.js:617:18), <anonymous>:20:16)
+    at eval (eval at _compile (/Users/jinfan/workplace/renderscore/renderscore/node_modules/nunjucks/src/environment.js:617:18), <anonymous>:15:46)
+    at eval (eval at _compile (/Users/jinfan/workplace/renderscore/renderscore/node_modules/nunjucks/src/environment.js:617:18), <anonymous>:15:86)
+    at createTemplate (/Users/jinfan/workplace/renderscore/renderscore/node_modules/nunjucks/src/environment.js:299:9)
+    at handle (/Users/jinfan/workplace/renderscore/renderscore/node_modules/nunjucks/src/environment.js:311:11)
+name: 'Template render error'
+pid: 60234
+hostname: jinfandeiMac.local
+
+2018-05-18 10:08:22,878 ERROR 60751 [-/::1/-/69ms GET /fb723b3d-82d1-4bab-8ae2-1903c1fddf31] nodejs.ReferenceError: app is not defined
+    at HomeController.show (/Users/jinfan/workplace/renderscore/renderscore/app/controller/home.js:15:5)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:188:7)
+
+pid: 60751
+hostname: jinfandeiMac.local
+
+2018-05-18 10:08:47,543 ERROR 60796 [-/::1/-/4508ms GET /fb723b3d-82d1-4bab-8ae2-1903c1fddf31] nodejs.Template render error: Error: Unable to call `submit`, which is undefined or falsey
+    at Object._prettifyError (/Users/jinfan/workplace/renderscore/renderscore/node_modules/nunjucks/src/lib.js:35:11)
+    at /Users/jinfan/workplace/renderscore/renderscore/node_modules/nunjucks/src/environment.js:547:19
+    at eval (eval at _compile (/Users/jinfan/workplace/renderscore/renderscore/node_modules/nunjucks/src/environment.js:617:18), <anonymous>:10:11)
+    at b_content (eval at _compile (/Users/jinfan/workplace/renderscore/renderscore/node_modules/nunjucks/src/environment.js:617:18), <anonymous>:65:3)
+    at Template.root [as rootRenderFunc] (eval at _compile (/Users/jinfan/workplace/renderscore/renderscore/node_modules/nunjucks/src/environment.js:617:18), <anonymous>:9:86)
+    at eval (eval at _compile (/Users/jinfan/workplace/renderscore/renderscore/node_modules/nunjucks/src/environment.js:617:18), <anonymous>:20:16)
+    at eval (eval at _compile (/Users/jinfan/workplace/renderscore/renderscore/node_modules/nunjucks/src/environment.js:617:18), <anonymous>:15:46)
+    at eval (eval at _compile (/Users/jinfan/workplace/renderscore/renderscore/node_modules/nunjucks/src/environment.js:617:18), <anonymous>:15:86)
+    at createTemplate (/Users/jinfan/workplace/renderscore/renderscore/node_modules/nunjucks/src/environment.js:299:9)
+    at handle (/Users/jinfan/workplace/renderscore/renderscore/node_modules/nunjucks/src/environment.js:311:11)
+name: 'Template render error'
+pid: 60796
+hostname: jinfandeiMac.local
+
+2018-05-18 10:10:45,110 ERROR 60796 [-/::1/-/88ms GET /fb723b3d-82d1-4bab-8ae2-1903c1fddf31] nodejs.Template render error: Error: Unable to call `submit`, which is undefined or falsey
+    at Object._prettifyError (/Users/jinfan/workplace/renderscore/renderscore/node_modules/nunjucks/src/lib.js:35:11)
+    at /Users/jinfan/workplace/renderscore/renderscore/node_modules/nunjucks/src/environment.js:547:19
+    at eval (eval at _compile (/Users/jinfan/workplace/renderscore/renderscore/node_modules/nunjucks/src/environment.js:617:18), <anonymous>:10:11)
+    at b_content (eval at _compile (/Users/jinfan/workplace/renderscore/renderscore/node_modules/nunjucks/src/environment.js:617:18), <anonymous>:65:3)
+    at Template.root [as rootRenderFunc] (eval at _compile (/Users/jinfan/workplace/renderscore/renderscore/node_modules/nunjucks/src/environment.js:617:18), <anonymous>:9:86)
+    at eval (eval at _compile (/Users/jinfan/workplace/renderscore/renderscore/node_modules/nunjucks/src/environment.js:617:18), <anonymous>:20:16)
+    at eval (eval at _compile (/Users/jinfan/workplace/renderscore/renderscore/node_modules/nunjucks/src/environment.js:617:18), <anonymous>:15:46)
+    at eval (eval at _compile (/Users/jinfan/workplace/renderscore/renderscore/node_modules/nunjucks/src/environment.js:617:18), <anonymous>:15:86)
+    at createTemplate (/Users/jinfan/workplace/renderscore/renderscore/node_modules/nunjucks/src/environment.js:299:9)
+    at handle (/Users/jinfan/workplace/renderscore/renderscore/node_modules/nunjucks/src/environment.js:311:11)
+name: 'Template render error'
+pid: 60796
+hostname: jinfandeiMac.local
+
+2018-05-18 10:10:49,260 ERROR 60796 [-/::1/-/70ms GET /fb723b3d-82d1-4bab-8ae2-1903c1fddf31] nodejs.Template render error: Error: Unable to call `submit`, which is undefined or falsey
+    at Object._prettifyError (/Users/jinfan/workplace/renderscore/renderscore/node_modules/nunjucks/src/lib.js:35:11)
+    at /Users/jinfan/workplace/renderscore/renderscore/node_modules/nunjucks/src/environment.js:547:19
+    at eval (eval at _compile (/Users/jinfan/workplace/renderscore/renderscore/node_modules/nunjucks/src/environment.js:617:18), <anonymous>:10:11)
+    at b_content (eval at _compile (/Users/jinfan/workplace/renderscore/renderscore/node_modules/nunjucks/src/environment.js:617:18), <anonymous>:65:3)
+    at Template.root [as rootRenderFunc] (eval at _compile (/Users/jinfan/workplace/renderscore/renderscore/node_modules/nunjucks/src/environment.js:617:18), <anonymous>:9:86)
+    at eval (eval at _compile (/Users/jinfan/workplace/renderscore/renderscore/node_modules/nunjucks/src/environment.js:617:18), <anonymous>:20:16)
+    at eval (eval at _compile (/Users/jinfan/workplace/renderscore/renderscore/node_modules/nunjucks/src/environment.js:617:18), <anonymous>:15:46)
+    at eval (eval at _compile (/Users/jinfan/workplace/renderscore/renderscore/node_modules/nunjucks/src/environment.js:617:18), <anonymous>:15:86)
+    at createTemplate (/Users/jinfan/workplace/renderscore/renderscore/node_modules/nunjucks/src/environment.js:299:9)
+    at handle (/Users/jinfan/workplace/renderscore/renderscore/node_modules/nunjucks/src/environment.js:311:11)
+name: 'Template render error'
+pid: 60796
+hostname: jinfandeiMac.local
+
+2018-05-18 10:10:51,038 ERROR 60796 [-/::1/-/72ms GET /fb723b3d-82d1-4bab-8ae2-1903c1fddf31] nodejs.Template render error: Error: Unable to call `submit`, which is undefined or falsey
+    at Object._prettifyError (/Users/jinfan/workplace/renderscore/renderscore/node_modules/nunjucks/src/lib.js:35:11)
+    at /Users/jinfan/workplace/renderscore/renderscore/node_modules/nunjucks/src/environment.js:547:19
+    at eval (eval at _compile (/Users/jinfan/workplace/renderscore/renderscore/node_modules/nunjucks/src/environment.js:617:18), <anonymous>:10:11)
+    at b_content (eval at _compile (/Users/jinfan/workplace/renderscore/renderscore/node_modules/nunjucks/src/environment.js:617:18), <anonymous>:65:3)
+    at Template.root [as rootRenderFunc] (eval at _compile (/Users/jinfan/workplace/renderscore/renderscore/node_modules/nunjucks/src/environment.js:617:18), <anonymous>:9:86)
+    at eval (eval at _compile (/Users/jinfan/workplace/renderscore/renderscore/node_modules/nunjucks/src/environment.js:617:18), <anonymous>:20:16)
+    at eval (eval at _compile (/Users/jinfan/workplace/renderscore/renderscore/node_modules/nunjucks/src/environment.js:617:18), <anonymous>:15:46)
+    at eval (eval at _compile (/Users/jinfan/workplace/renderscore/renderscore/node_modules/nunjucks/src/environment.js:617:18), <anonymous>:15:86)
+    at createTemplate (/Users/jinfan/workplace/renderscore/renderscore/node_modules/nunjucks/src/environment.js:299:9)
+    at handle (/Users/jinfan/workplace/renderscore/renderscore/node_modules/nunjucks/src/environment.js:311:11)
+name: 'Template render error'
+pid: 60796
+hostname: jinfandeiMac.local
+
+2018-05-18 10:10:52,090 ERROR 60796 [-/::1/-/69ms GET /fb723b3d-82d1-4bab-8ae2-1903c1fddf31] nodejs.Template render error: Error: Unable to call `submit`, which is undefined or falsey
+    at Object._prettifyError (/Users/jinfan/workplace/renderscore/renderscore/node_modules/nunjucks/src/lib.js:35:11)
+    at /Users/jinfan/workplace/renderscore/renderscore/node_modules/nunjucks/src/environment.js:547:19
+    at eval (eval at _compile (/Users/jinfan/workplace/renderscore/renderscore/node_modules/nunjucks/src/environment.js:617:18), <anonymous>:10:11)
+    at b_content (eval at _compile (/Users/jinfan/workplace/renderscore/renderscore/node_modules/nunjucks/src/environment.js:617:18), <anonymous>:65:3)
+    at Template.root [as rootRenderFunc] (eval at _compile (/Users/jinfan/workplace/renderscore/renderscore/node_modules/nunjucks/src/environment.js:617:18), <anonymous>:9:86)
+    at eval (eval at _compile (/Users/jinfan/workplace/renderscore/renderscore/node_modules/nunjucks/src/environment.js:617:18), <anonymous>:20:16)
+    at eval (eval at _compile (/Users/jinfan/workplace/renderscore/renderscore/node_modules/nunjucks/src/environment.js:617:18), <anonymous>:15:46)
+    at eval (eval at _compile (/Users/jinfan/workplace/renderscore/renderscore/node_modules/nunjucks/src/environment.js:617:18), <anonymous>:15:86)
+    at createTemplate (/Users/jinfan/workplace/renderscore/renderscore/node_modules/nunjucks/src/environment.js:299:9)
+    at handle (/Users/jinfan/workplace/renderscore/renderscore/node_modules/nunjucks/src/environment.js:311:11)
+name: 'Template render error'
+pid: 60796
+hostname: jinfandeiMac.local
+
+2018-05-18 17:45:37,114 ERROR 74980 nodejs.TypeError: Cannot read property 'ctx' of undefined
+    at getJobInfoById (/Users/jinfan/workplace/renderscore/renderscore/app/service/database.js:11:21)
+    at /Users/jinfan/workplace/renderscore/renderscore/app/controller/home.js:30:28
+    at HomeController.show (/Users/jinfan/workplace/renderscore/renderscore/app/controller/home.js:16:61)
+    at Object.callFn (/Users/jinfan/workplace/renderscore/renderscore/node_modules/egg-core/lib/utils/index.js:36:21)
+    at Object.classControllerMiddleware (/Users/jinfan/workplace/renderscore/renderscore/node_modules/egg-core/lib/loader/mixin/controller.js:84:20)
+    at Object.callFn (/Users/jinfan/workplace/renderscore/renderscore/node_modules/egg-core/lib/utils/index.js:36:21)
+    at wrappedController (/Users/jinfan/workplace/renderscore/renderscore/node_modules/egg-core/lib/utils/router.js:322:18)
+    at dispatch (/Users/jinfan/workplace/renderscore/renderscore/node_modules/koa-router/node_modules/koa-compose/index.js:44:32)
+    at next (/Users/jinfan/workplace/renderscore/renderscore/node_modules/koa-router/node_modules/koa-compose/index.js:45:18)
+    at /Users/jinfan/workplace/renderscore/renderscore/node_modules/koa-router/lib/router.js:346:16
+
+pid: 74980
+hostname: jinfandeiMac.local
+
+2018-05-18 17:46:40,674 ERROR 74907 nodejs.ClusterClientNoResponseError: client no response in 63555ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout.Leader._heartbeatTimer.setInterval [as _onTimeout] (/Users/jinfan/workplace/renderscore/renderscore/node_modules/cluster-client/lib/leader.js:74:23)
+    at ontimeout (timers.js:475:11)
+    at tryOnTimeout (timers.js:310:5)
+    at Timer.listOnTimeout (timers.js:270:5)
+name: 'ClusterClientNoResponseError'
+pid: 74907
+hostname: jinfandeiMac.local
+
+2018-05-18 17:47:46,276 ERROR 75128 nodejs.TypeError: Cannot read property 'ctx' of undefined
+    at getJobInfoById (/Users/jinfan/workplace/renderscore/renderscore/app/service/database.js:11:21)
+    at HomeController.<anonymous> (/Users/jinfan/workplace/renderscore/renderscore/app/controller/home.js:30:28)
+    at HomeController.show (/Users/jinfan/workplace/renderscore/renderscore/app/controller/home.js:16:72)
+    at Object.callFn (/Users/jinfan/workplace/renderscore/renderscore/node_modules/egg-core/lib/utils/index.js:36:21)
+    at Object.classControllerMiddleware (/Users/jinfan/workplace/renderscore/renderscore/node_modules/egg-core/lib/loader/mixin/controller.js:84:20)
+    at Object.callFn (/Users/jinfan/workplace/renderscore/renderscore/node_modules/egg-core/lib/utils/index.js:36:21)
+    at wrappedController (/Users/jinfan/workplace/renderscore/renderscore/node_modules/egg-core/lib/utils/router.js:322:18)
+    at dispatch (/Users/jinfan/workplace/renderscore/renderscore/node_modules/koa-router/node_modules/koa-compose/index.js:44:32)
+    at next (/Users/jinfan/workplace/renderscore/renderscore/node_modules/koa-router/node_modules/koa-compose/index.js:45:18)
+    at /Users/jinfan/workplace/renderscore/renderscore/node_modules/koa-router/lib/router.js:346:16
+
+pid: 75128
+hostname: jinfandeiMac.local
+
+2018-05-18 17:48:40,684 ERROR 74907 nodejs.ClusterClientNoResponseError: client no response in 70912ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout.Leader._heartbeatTimer.setInterval [as _onTimeout] (/Users/jinfan/workplace/renderscore/renderscore/node_modules/cluster-client/lib/leader.js:74:23)
+    at ontimeout (timers.js:475:11)
+    at tryOnTimeout (timers.js:310:5)
+    at Timer.listOnTimeout (timers.js:270:5)
+name: 'ClusterClientNoResponseError'
+pid: 74907
+hostname: jinfandeiMac.local
+
+2018-05-18 17:49:00,690 ERROR 74907 nodejs.ClusterClientNoResponseError: client no response in 68171ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout.Leader._heartbeatTimer.setInterval [as _onTimeout] (/Users/jinfan/workplace/renderscore/renderscore/node_modules/cluster-client/lib/leader.js:74:23)
+    at ontimeout (timers.js:475:11)
+    at tryOnTimeout (timers.js:310:5)
+    at Timer.listOnTimeout (timers.js:270:5)
+name: 'ClusterClientNoResponseError'
+pid: 74907
+hostname: jinfandeiMac.local
+
+2018-05-18 17:55:20,737 ERROR 74907 nodejs.ClusterClientNoResponseError: client no response in 61696ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout.Leader._heartbeatTimer.setInterval [as _onTimeout] (/Users/jinfan/workplace/renderscore/renderscore/node_modules/cluster-client/lib/leader.js:74:23)
+    at ontimeout (timers.js:475:11)
+    at tryOnTimeout (timers.js:310:5)
+    at Timer.listOnTimeout (timers.js:270:5)
+name: 'ClusterClientNoResponseError'
+pid: 74907
+hostname: jinfandeiMac.local
+
+2018-05-18 17:58:40,762 ERROR 74907 nodejs.ClusterClientNoResponseError: client no response in 75603ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout.Leader._heartbeatTimer.setInterval [as _onTimeout] (/Users/jinfan/workplace/renderscore/renderscore/node_modules/cluster-client/lib/leader.js:74:23)
+    at ontimeout (timers.js:475:11)
+    at tryOnTimeout (timers.js:310:5)
+    at Timer.listOnTimeout (timers.js:270:5)
+name: 'ClusterClientNoResponseError'
+pid: 74907
+hostname: jinfandeiMac.local
+
+2018-05-18 18:00:16,166 ERROR 75933 A client (::1:65466) error [ECONNRESET] occurred: read ECONNRESET
+2018-05-18 18:08:43,141 ERROR 76522 [-/::1/-/68ms GET /page/0] nodejs.TypeError: Cannot read property 'includes' of undefined
+    at data.list.result.map (/Users/jinfan/workplace/renderscore/renderscore/app/controller/home.js:33:29)
+    at Array.map (<anonymous>)
+    at /Users/jinfan/workplace/renderscore/renderscore/app/controller/home.js:32:34
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:188:7)
+
+pid: 76522
+hostname: jinfandeiMac.local
+
+2018-05-18 18:10:00,866 ERROR 74907 nodejs.ClusterClientNoResponseError: client no response in 65789ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout.Leader._heartbeatTimer.setInterval [as _onTimeout] (/Users/jinfan/workplace/renderscore/renderscore/node_modules/cluster-client/lib/leader.js:74:23)
+    at ontimeout (timers.js:475:11)
+    at tryOnTimeout (timers.js:310:5)
+    at Timer.listOnTimeout (timers.js:270:5)
+name: 'ClusterClientNoResponseError'
+pid: 74907
+hostname: jinfandeiMac.local
+
+2018-05-18 18:10:20,871 ERROR 74907 nodejs.ClusterClientNoResponseError: client no response in 70514ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout.Leader._heartbeatTimer.setInterval [as _onTimeout] (/Users/jinfan/workplace/renderscore/renderscore/node_modules/cluster-client/lib/leader.js:74:23)
+    at ontimeout (timers.js:475:11)
+    at tryOnTimeout (timers.js:310:5)
+    at Timer.listOnTimeout (timers.js:270:5)
+name: 'ClusterClientNoResponseError'
+pid: 74907
+hostname: jinfandeiMac.local
+
+2018-05-18 18:12:00,884 ERROR 74907 nodejs.ClusterClientNoResponseError: client no response in 71019ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout.Leader._heartbeatTimer.setInterval [as _onTimeout] (/Users/jinfan/workplace/renderscore/renderscore/node_modules/cluster-client/lib/leader.js:74:23)
+    at ontimeout (timers.js:475:11)
+    at tryOnTimeout (timers.js:310:5)
+    at Timer.listOnTimeout (timers.js:270:5)
+name: 'ClusterClientNoResponseError'
+pid: 74907
+hostname: jinfandeiMac.local
+
+2018-05-18 18:13:00,892 ERROR 74907 nodejs.ClusterClientNoResponseError: client no response in 60049ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout.Leader._heartbeatTimer.setInterval [as _onTimeout] (/Users/jinfan/workplace/renderscore/renderscore/node_modules/cluster-client/lib/leader.js:74:23)
+    at ontimeout (timers.js:475:11)
+    at tryOnTimeout (timers.js:310:5)
+    at Timer.listOnTimeout (timers.js:270:5)
+name: 'ClusterClientNoResponseError'
+pid: 74907
+hostname: jinfandeiMac.local
+
+2018-05-18 18:14:20,905 ERROR 74907 nodejs.ClusterClientNoResponseError: client no response in 75854ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout.Leader._heartbeatTimer.setInterval [as _onTimeout] (/Users/jinfan/workplace/renderscore/renderscore/node_modules/cluster-client/lib/leader.js:74:23)
+    at ontimeout (timers.js:475:11)
+    at tryOnTimeout (timers.js:310:5)
+    at Timer.listOnTimeout (timers.js:270:5)
+name: 'ClusterClientNoResponseError'
+pid: 74907
+hostname: jinfandeiMac.local
+
+2018-05-18 18:15:00,913 ERROR 74907 nodejs.ClusterClientNoResponseError: client no response in 68907ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout.Leader._heartbeatTimer.setInterval [as _onTimeout] (/Users/jinfan/workplace/renderscore/renderscore/node_modules/cluster-client/lib/leader.js:74:23)
+    at ontimeout (timers.js:475:11)
+    at tryOnTimeout (timers.js:310:5)
+    at Timer.listOnTimeout (timers.js:270:5)
+name: 'ClusterClientNoResponseError'
+pid: 74907
+hostname: jinfandeiMac.local
+
+2018-05-18 18:16:00,920 ERROR 74907 nodejs.ClusterClientNoResponseError: client no response in 69723ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout.Leader._heartbeatTimer.setInterval [as _onTimeout] (/Users/jinfan/workplace/renderscore/renderscore/node_modules/cluster-client/lib/leader.js:74:23)
+    at ontimeout (timers.js:475:11)
+    at tryOnTimeout (timers.js:310:5)
+    at Timer.listOnTimeout (timers.js:270:5)
+name: 'ClusterClientNoResponseError'
+pid: 74907
+hostname: jinfandeiMac.local
+
+2018-05-18 18:16:20,924 ERROR 74907 nodejs.ClusterClientNoResponseError: client no response in 63775ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout.Leader._heartbeatTimer.setInterval [as _onTimeout] (/Users/jinfan/workplace/renderscore/renderscore/node_modules/cluster-client/lib/leader.js:74:23)
+    at ontimeout (timers.js:475:11)
+    at tryOnTimeout (timers.js:310:5)
+    at Timer.listOnTimeout (timers.js:270:5)
+name: 'ClusterClientNoResponseError'
+pid: 74907
+hostname: jinfandeiMac.local
+
+2018-05-18 18:17:00,931 ERROR 74907 nodejs.ClusterClientNoResponseError: client no response in 65361ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout.Leader._heartbeatTimer.setInterval [as _onTimeout] (/Users/jinfan/workplace/renderscore/renderscore/node_modules/cluster-client/lib/leader.js:74:23)
+    at ontimeout (timers.js:475:11)
+    at tryOnTimeout (timers.js:310:5)
+    at Timer.listOnTimeout (timers.js:270:5)
+name: 'ClusterClientNoResponseError'
+pid: 74907
+hostname: jinfandeiMac.local
+
+2018-05-18 18:18:00,941 ERROR 74907 nodejs.ClusterClientNoResponseError: client no response in 77565ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout.Leader._heartbeatTimer.setInterval [as _onTimeout] (/Users/jinfan/workplace/renderscore/renderscore/node_modules/cluster-client/lib/leader.js:74:23)
+    at ontimeout (timers.js:475:11)
+    at tryOnTimeout (timers.js:310:5)
+    at Timer.listOnTimeout (timers.js:270:5)
+name: 'ClusterClientNoResponseError'
+pid: 74907
+hostname: jinfandeiMac.local
+
+2018-05-18 18:22:00,982 ERROR 74907 nodejs.ClusterClientNoResponseError: client no response in 75374ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout.Leader._heartbeatTimer.setInterval [as _onTimeout] (/Users/jinfan/workplace/renderscore/renderscore/node_modules/cluster-client/lib/leader.js:74:23)
+    at ontimeout (timers.js:475:11)
+    at tryOnTimeout (timers.js:310:5)
+    at Timer.listOnTimeout (timers.js:270:5)
+name: 'ClusterClientNoResponseError'
+pid: 74907
+hostname: jinfandeiMac.local
+
+2018-05-19 10:31:59,994 ERROR 34415 [-/::1/-/9ms GET /page/0] nodejs.TypeError: Cannot read property 'join' of undefined
+    at HomeController.getJobByPage (/Users/jinfan/workplace/renderscore/renderscore/app/service/database.js:21:46)
+    at /Users/jinfan/workplace/renderscore/renderscore/app/controller/home.js:31:43
+    at HomeController.page (/Users/jinfan/workplace/renderscore/renderscore/app/controller/home.js:24:81)
+    at Object.callFn (/Users/jinfan/workplace/renderscore/renderscore/node_modules/egg-core/lib/utils/index.js:36:21)
+    at Object.classControllerMiddleware (/Users/jinfan/workplace/renderscore/renderscore/node_modules/egg-core/lib/loader/mixin/controller.js:84:20)
+    at Object.callFn (/Users/jinfan/workplace/renderscore/renderscore/node_modules/egg-core/lib/utils/index.js:36:21)
+    at wrappedController (/Users/jinfan/workplace/renderscore/renderscore/node_modules/egg-core/lib/utils/router.js:322:18)
+    at dispatch (/Users/jinfan/workplace/renderscore/renderscore/node_modules/koa-router/node_modules/koa-compose/index.js:44:32)
+    at next (/Users/jinfan/workplace/renderscore/renderscore/node_modules/koa-router/node_modules/koa-compose/index.js:45:18)
+    at /Users/jinfan/workplace/renderscore/renderscore/node_modules/koa-router/lib/router.js:346:16
+
+pid: 34415
+hostname: jinfandeiMac.local
+
+2018-05-19 10:32:50,469 ERROR 34503 [-/::1/-/17553ms GET /page/0] nodejs.ER_PARSE_ERRORError: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'where queueName not in ('panorama,oneMinute,HDPanorama,HDAerial,oneMinuteAerial,' at line 1
+    at Query.Sequence._packetToError (/Users/jinfan/workplace/renderscore/renderscore/node_modules/mysql/lib/protocol/sequences/Sequence.js:52:14)
+    at Query.ErrorPacket (/Users/jinfan/workplace/renderscore/renderscore/node_modules/mysql/lib/protocol/sequences/Query.js:77:18)
+    at Protocol._parsePacket (/Users/jinfan/workplace/renderscore/renderscore/node_modules/mysql/lib/protocol/Protocol.js:279:23)
+    at Parser.write (/Users/jinfan/workplace/renderscore/renderscore/node_modules/mysql/lib/protocol/Parser.js:76:12)
+    at Protocol.write (/Users/jinfan/workplace/renderscore/renderscore/node_modules/mysql/lib/protocol/Protocol.js:39:16)
+    at Socket.<anonymous> (/Users/jinfan/workplace/renderscore/renderscore/node_modules/mysql/lib/Connection.js:103:28)
+    at emitOne (events.js:116:13)
+    at Socket.emit (events.js:211:7)
+    at addChunk (_stream_readable.js:263:12)
+    at readableAddChunk (_stream_readable.js:250:11)
+    --------------------
+    at Pool.query (/Users/jinfan/workplace/renderscore/renderscore/node_modules/mysql/lib/Pool.js:199:23)
+    at /Users/jinfan/workplace/renderscore/renderscore/node_modules/ali-rds/node_modules/pify/index.js:29:7
+    at new Promise (<anonymous>)
+    at Pool.<anonymous> (/Users/jinfan/workplace/renderscore/renderscore/node_modules/ali-rds/node_modules/pify/index.js:12:10)
+    at Pool.ret [as query] (/Users/jinfan/workplace/renderscore/renderscore/node_modules/ali-rds/node_modules/pify/index.js:56:34)
+    at RDSClient.proto._query (/Users/jinfan/workplace/renderscore/renderscore/node_modules/ali-rds/lib/client.js:34:20)
+    at RDSClient.proto.query (/Users/jinfan/workplace/renderscore/renderscore/node_modules/ali-rds/lib/operator.js:54:29)
+    at proto.query.next (<anonymous>)
+    at onFulfilled (/Users/jinfan/workplace/renderscore/renderscore/node_modules/co/index.js:65:19)
+    at /Users/jinfan/workplace/renderscore/renderscore/node_modules/co/index.js:54:5
+    sql: select * from renderjob where created > 1495099146000 where queueName not in ('panorama,oneMinute,HDPanorama,HDAerial,oneMinuteAerial,HDMaterial') order by created ASC limit 0, 20
+code: 'ER_PARSE_ERROR'
+errno: 1064
+sqlMessage: 'You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near \'where queueName not in (\'panorama,oneMinute,HDPanorama,HDAerial,oneMinuteAerial,\' at line 1'
+sqlState: '42000'
+index: 0
+sql: 'select * from renderjob where created > 1495099146000 where queueName not in (\'panorama,oneMinute,HDPanorama,HDAerial,oneMinuteAerial,HDMaterial\') order by created ASC limit 0, 20'
+name: 'ER_PARSE_ERRORError'
+pid: 34503
+hostname: jinfandeiMac.local
+
+2018-05-19 10:33:20,186 ERROR 74907 nodejs.ClusterClientNoResponseError: client no response in 70709ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout.Leader._heartbeatTimer.setInterval [as _onTimeout] (/Users/jinfan/workplace/renderscore/renderscore/node_modules/cluster-client/lib/leader.js:74:23)
+    at ontimeout (timers.js:475:11)
+    at tryOnTimeout (timers.js:310:5)
+    at Timer.listOnTimeout (timers.js:270:5)
+name: 'ClusterClientNoResponseError'
+pid: 74907
+hostname: jinfandeiMac.local
+
+2018-05-19 10:33:40,189 ERROR 74907 nodejs.ClusterClientNoResponseError: client no response in 72922ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout.Leader._heartbeatTimer.setInterval [as _onTimeout] (/Users/jinfan/workplace/renderscore/renderscore/node_modules/cluster-client/lib/leader.js:74:23)
+    at ontimeout (timers.js:475:11)
+    at tryOnTimeout (timers.js:310:5)
+    at Timer.listOnTimeout (timers.js:270:5)
+name: 'ClusterClientNoResponseError'
+pid: 74907
+hostname: jinfandeiMac.local
+
+2018-05-19 10:35:07,533 ERROR 34663 [-/::1/-/4612ms GET /page/0] nodejs.ER_PARSE_ERRORError: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'where queueName not in ('ontMinute') order by created ASC limit 0, 20' at line 1
+    at Query.Sequence._packetToError (/Users/jinfan/workplace/renderscore/renderscore/node_modules/mysql/lib/protocol/sequences/Sequence.js:52:14)
+    at Query.ErrorPacket (/Users/jinfan/workplace/renderscore/renderscore/node_modules/mysql/lib/protocol/sequences/Query.js:77:18)
+    at Protocol._parsePacket (/Users/jinfan/workplace/renderscore/renderscore/node_modules/mysql/lib/protocol/Protocol.js:279:23)
+    at Parser.write (/Users/jinfan/workplace/renderscore/renderscore/node_modules/mysql/lib/protocol/Parser.js:76:12)
+    at Protocol.write (/Users/jinfan/workplace/renderscore/renderscore/node_modules/mysql/lib/protocol/Protocol.js:39:16)
+    at Socket.<anonymous> (/Users/jinfan/workplace/renderscore/renderscore/node_modules/mysql/lib/Connection.js:103:28)
+    at emitOne (events.js:116:13)
+    at Socket.emit (events.js:211:7)
+    at addChunk (_stream_readable.js:263:12)
+    at readableAddChunk (_stream_readable.js:250:11)
+    --------------------
+    at Pool.query (/Users/jinfan/workplace/renderscore/renderscore/node_modules/mysql/lib/Pool.js:199:23)
+    at /Users/jinfan/workplace/renderscore/renderscore/node_modules/ali-rds/node_modules/pify/index.js:29:7
+    at new Promise (<anonymous>)
+    at Pool.<anonymous> (/Users/jinfan/workplace/renderscore/renderscore/node_modules/ali-rds/node_modules/pify/index.js:12:10)
+    at Pool.ret [as query] (/Users/jinfan/workplace/renderscore/renderscore/node_modules/ali-rds/node_modules/pify/index.js:56:34)
+    at RDSClient.proto._query (/Users/jinfan/workplace/renderscore/renderscore/node_modules/ali-rds/lib/client.js:34:20)
+    at RDSClient.proto.query (/Users/jinfan/workplace/renderscore/renderscore/node_modules/ali-rds/lib/operator.js:54:29)
+    at proto.query.next (<anonymous>)
+    at onFulfilled (/Users/jinfan/workplace/renderscore/renderscore/node_modules/co/index.js:65:19)
+    at /Users/jinfan/workplace/renderscore/renderscore/node_modules/co/index.js:54:5
+    sql: select * from renderjob where created > 1495099146000 where queueName not in ('ontMinute') order by created ASC limit 0, 20
+code: 'ER_PARSE_ERROR'
+errno: 1064
+sqlMessage: 'You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near \'where queueName not in (\'ontMinute\') order by created ASC limit 0, 20\' at line 1'
+sqlState: '42000'
+index: 0
+sql: 'select * from renderjob where created > 1495099146000 where queueName not in (\'ontMinute\') order by created ASC limit 0, 20'
+name: 'ER_PARSE_ERRORError'
+pid: 34663
+hostname: jinfandeiMac.local
+
+2018-05-19 10:46:20,298 ERROR 74907 nodejs.ClusterClientNoResponseError: client no response in 66113ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout.Leader._heartbeatTimer.setInterval [as _onTimeout] (/Users/jinfan/workplace/renderscore/renderscore/node_modules/cluster-client/lib/leader.js:74:23)
+    at ontimeout (timers.js:475:11)
+    at tryOnTimeout (timers.js:310:5)
+    at Timer.listOnTimeout (timers.js:270:5)
+name: 'ClusterClientNoResponseError'
+pid: 74907
+hostname: jinfandeiMac.local
+
+2018-05-19 10:47:00,305 ERROR 74907 nodejs.ClusterClientNoResponseError: client no response in 65688ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout.Leader._heartbeatTimer.setInterval [as _onTimeout] (/Users/jinfan/workplace/renderscore/renderscore/node_modules/cluster-client/lib/leader.js:74:23)
+    at ontimeout (timers.js:475:11)
+    at tryOnTimeout (timers.js:310:5)
+    at Timer.listOnTimeout (timers.js:270:5)
+name: 'ClusterClientNoResponseError'
+pid: 74907
+hostname: jinfandeiMac.local
+
+2018-05-19 10:48:40,315 ERROR 74907 nodejs.ClusterClientNoResponseError: client no response in 71093ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout.Leader._heartbeatTimer.setInterval [as _onTimeout] (/Users/jinfan/workplace/renderscore/renderscore/node_modules/cluster-client/lib/leader.js:74:23)
+    at ontimeout (timers.js:475:11)
+    at tryOnTimeout (timers.js:310:5)
+    at Timer.listOnTimeout (timers.js:270:5)
+name: 'ClusterClientNoResponseError'
+pid: 74907
+hostname: jinfandeiMac.local
+
+2018-05-19 10:50:40,331 ERROR 74907 nodejs.ClusterClientNoResponseError: client no response in 70464ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout.Leader._heartbeatTimer.setInterval [as _onTimeout] (/Users/jinfan/workplace/renderscore/renderscore/node_modules/cluster-client/lib/leader.js:74:23)
+    at ontimeout (timers.js:475:11)
+    at tryOnTimeout (timers.js:310:5)
+    at Timer.listOnTimeout (timers.js:270:5)
+name: 'ClusterClientNoResponseError'
+pid: 74907
+hostname: jinfandeiMac.local
+
+2018-05-19 10:51:20,333 ERROR 74907 nodejs.ClusterClientNoResponseError: client no response in 68661ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout.Leader._heartbeatTimer.setInterval [as _onTimeout] (/Users/jinfan/workplace/renderscore/renderscore/node_modules/cluster-client/lib/leader.js:74:23)
+    at ontimeout (timers.js:475:11)
+    at tryOnTimeout (timers.js:310:5)
+    at Timer.listOnTimeout (timers.js:270:5)
+name: 'ClusterClientNoResponseError'
+pid: 74907
+hostname: jinfandeiMac.local
+
+2018-05-19 10:55:20,372 ERROR 74907 nodejs.ClusterClientNoResponseError: client no response in 78888ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout.Leader._heartbeatTimer.setInterval [as _onTimeout] (/Users/jinfan/workplace/renderscore/renderscore/node_modules/cluster-client/lib/leader.js:74:23)
+    at ontimeout (timers.js:475:11)
+    at tryOnTimeout (timers.js:310:5)
+    at Timer.listOnTimeout (timers.js:270:5)
+name: 'ClusterClientNoResponseError'
+pid: 74907
+hostname: jinfandeiMac.local
+
+2018-05-19 10:58:40,397 ERROR 74907 nodejs.ClusterClientNoResponseError: client no response in 73617ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout.Leader._heartbeatTimer.setInterval [as _onTimeout] (/Users/jinfan/workplace/renderscore/renderscore/node_modules/cluster-client/lib/leader.js:74:23)
+    at ontimeout (timers.js:475:11)
+    at tryOnTimeout (timers.js:310:5)
+    at Timer.listOnTimeout (timers.js:270:5)
+name: 'ClusterClientNoResponseError'
+pid: 74907
+hostname: jinfandeiMac.local
+
+2018-05-19 11:00:40,414 ERROR 74907 nodejs.ClusterClientNoResponseError: client no response in 61139ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout.Leader._heartbeatTimer.setInterval [as _onTimeout] (/Users/jinfan/workplace/renderscore/renderscore/node_modules/cluster-client/lib/leader.js:74:23)
+    at ontimeout (timers.js:475:11)
+    at tryOnTimeout (timers.js:310:5)
+    at Timer.listOnTimeout (timers.js:270:5)
+name: 'ClusterClientNoResponseError'
+pid: 74907
+hostname: jinfandeiMac.local
+
+2018-05-19 11:02:20,431 ERROR 74907 nodejs.ClusterClientNoResponseError: client no response in 70354ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout.Leader._heartbeatTimer.setInterval [as _onTimeout] (/Users/jinfan/workplace/renderscore/renderscore/node_modules/cluster-client/lib/leader.js:74:23)
+    at ontimeout (timers.js:475:11)
+    at tryOnTimeout (timers.js:310:5)
+    at Timer.listOnTimeout (timers.js:270:5)
+name: 'ClusterClientNoResponseError'
+pid: 74907
+hostname: jinfandeiMac.local
+
+2018-05-19 11:05:40,459 ERROR 74907 nodejs.ClusterClientNoResponseError: client no response in 62602ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout.Leader._heartbeatTimer.setInterval [as _onTimeout] (/Users/jinfan/workplace/renderscore/renderscore/node_modules/cluster-client/lib/leader.js:74:23)
+    at ontimeout (timers.js:475:11)
+    at tryOnTimeout (timers.js:310:5)
+    at Timer.listOnTimeout (timers.js:270:5)
+name: 'ClusterClientNoResponseError'
+pid: 74907
+hostname: jinfandeiMac.local
+
+2018-05-19 11:08:40,475 ERROR 74907 nodejs.ClusterClientNoResponseError: client no response in 69235ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout.Leader._heartbeatTimer.setInterval [as _onTimeout] (/Users/jinfan/workplace/renderscore/renderscore/node_modules/cluster-client/lib/leader.js:74:23)
+    at ontimeout (timers.js:475:11)
+    at tryOnTimeout (timers.js:310:5)
+    at Timer.listOnTimeout (timers.js:270:5)
+name: 'ClusterClientNoResponseError'
+pid: 74907
+hostname: jinfandeiMac.local
+
+2018-05-19 11:09:40,486 ERROR 74907 nodejs.ClusterClientNoResponseError: client no response in 62199ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout.Leader._heartbeatTimer.setInterval [as _onTimeout] (/Users/jinfan/workplace/renderscore/renderscore/node_modules/cluster-client/lib/leader.js:74:23)
+    at ontimeout (timers.js:475:11)
+    at tryOnTimeout (timers.js:310:5)
+    at Timer.listOnTimeout (timers.js:270:5)
+name: 'ClusterClientNoResponseError'
+pid: 74907
+hostname: jinfandeiMac.local
+
+2018-05-19 11:10:20,495 ERROR 74907 nodejs.ClusterClientNoResponseError: client no response in 73699ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout.Leader._heartbeatTimer.setInterval [as _onTimeout] (/Users/jinfan/workplace/renderscore/renderscore/node_modules/cluster-client/lib/leader.js:74:23)
+    at ontimeout (timers.js:475:11)
+    at tryOnTimeout (timers.js:310:5)
+    at Timer.listOnTimeout (timers.js:270:5)
+name: 'ClusterClientNoResponseError'
+pid: 74907
+hostname: jinfandeiMac.local
+
+2018-05-19 11:13:40,526 ERROR 74907 nodejs.ClusterClientNoResponseError: client no response in 70708ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout.Leader._heartbeatTimer.setInterval [as _onTimeout] (/Users/jinfan/workplace/renderscore/renderscore/node_modules/cluster-client/lib/leader.js:74:23)
+    at ontimeout (timers.js:475:11)
+    at tryOnTimeout (timers.js:310:5)
+    at Timer.listOnTimeout (timers.js:270:5)
+name: 'ClusterClientNoResponseError'
+pid: 74907
+hostname: jinfandeiMac.local
+
+2018-05-19 11:15:20,536 ERROR 74907 nodejs.ClusterClientNoResponseError: client no response in 77302ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout.Leader._heartbeatTimer.setInterval [as _onTimeout] (/Users/jinfan/workplace/renderscore/renderscore/node_modules/cluster-client/lib/leader.js:74:23)
+    at ontimeout (timers.js:475:11)
+    at tryOnTimeout (timers.js:310:5)
+    at Timer.listOnTimeout (timers.js:270:5)
+name: 'ClusterClientNoResponseError'
+pid: 74907
+hostname: jinfandeiMac.local
+
+2018-05-19 11:16:12,752 ERROR 75128 nodejs.TypeError: Cannot read property 'ctx' of undefined
+    at getJobInfoById (/Users/jinfan/workplace/renderscore/renderscore/app/service/database.js:11:21)
+    at HomeController.<anonymous> (/Users/jinfan/workplace/renderscore/renderscore/app/controller/home.js:30:28)
+    at HomeController.show (/Users/jinfan/workplace/renderscore/renderscore/app/controller/home.js:16:72)
+    at Object.callFn (/Users/jinfan/workplace/renderscore/renderscore/node_modules/egg-core/lib/utils/index.js:36:21)
+    at Object.classControllerMiddleware (/Users/jinfan/workplace/renderscore/renderscore/node_modules/egg-core/lib/loader/mixin/controller.js:84:20)
+    at Object.callFn (/Users/jinfan/workplace/renderscore/renderscore/node_modules/egg-core/lib/utils/index.js:36:21)
+    at wrappedController (/Users/jinfan/workplace/renderscore/renderscore/node_modules/egg-core/lib/utils/router.js:322:18)
+    at dispatch (/Users/jinfan/workplace/renderscore/renderscore/node_modules/koa-router/node_modules/koa-compose/index.js:44:32)
+    at next (/Users/jinfan/workplace/renderscore/renderscore/node_modules/koa-router/node_modules/koa-compose/index.js:45:18)
+    at /Users/jinfan/workplace/renderscore/renderscore/node_modules/koa-router/lib/router.js:346:16
+
+pid: 75128
+hostname: jinfandeiMac.local
+
+2018-05-19 11:17:59,048 ERROR 37515 nodejs.ClusterClientNoResponseError: client no response in 77218ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout.Leader._heartbeatTimer.setInterval [as _onTimeout] (/Users/jinfan/workplace/renderscore/renderscore/node_modules/cluster-client/lib/leader.js:74:23)
+    at ontimeout (timers.js:475:11)
+    at tryOnTimeout (timers.js:310:5)
+    at Timer.listOnTimeout (timers.js:270:5)
+name: 'ClusterClientNoResponseError'
+pid: 37515
+hostname: jinfandeiMac.local
+
+2018-05-19 11:19:59,063 ERROR 37515 nodejs.ClusterClientNoResponseError: client no response in 65757ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout.Leader._heartbeatTimer.setInterval [as _onTimeout] (/Users/jinfan/workplace/renderscore/renderscore/node_modules/cluster-client/lib/leader.js:74:23)
+    at ontimeout (timers.js:475:11)
+    at tryOnTimeout (timers.js:310:5)
+    at Timer.listOnTimeout (timers.js:270:5)
+name: 'ClusterClientNoResponseError'
+pid: 37515
+hostname: jinfandeiMac.local
+
+2018-05-19 11:22:01,423 ERROR 37852 [-/::1/-/7ms GET /page/0] nodejs.TypeError: types.forEach is not a function
+    at HomeController.getJobByPage (/Users/jinfan/workplace/renderscore/renderscore/app/service/database.js:24:15)
+    at /Users/jinfan/workplace/renderscore/renderscore/app/controller/home.js:31:43
+    at HomeController.page (/Users/jinfan/workplace/renderscore/renderscore/app/controller/home.js:24:81)
+    at Object.callFn (/Users/jinfan/workplace/renderscore/renderscore/node_modules/egg-core/lib/utils/index.js:36:21)
+    at Object.classControllerMiddleware (/Users/jinfan/workplace/renderscore/renderscore/node_modules/egg-core/lib/loader/mixin/controller.js:84:20)
+    at Object.callFn (/Users/jinfan/workplace/renderscore/renderscore/node_modules/egg-core/lib/utils/index.js:36:21)
+    at wrappedController (/Users/jinfan/workplace/renderscore/renderscore/node_modules/egg-core/lib/utils/router.js:322:18)
+    at dispatch (/Users/jinfan/workplace/renderscore/renderscore/node_modules/koa-router/node_modules/koa-compose/index.js:44:32)
+    at next (/Users/jinfan/workplace/renderscore/renderscore/node_modules/koa-router/node_modules/koa-compose/index.js:45:18)
+    at /Users/jinfan/workplace/renderscore/renderscore/node_modules/koa-router/lib/router.js:346:16
+
+pid: 37852
+hostname: jinfandeiMac.local
+
+2018-05-19 11:22:41,451 ERROR 37884 [-/::1/-/15496ms GET /page/0] nodejs.TypeError: sql.splice is not a function
+    at HomeController.getJobByPage (/Users/jinfan/workplace/renderscore/renderscore/app/service/database.js:25:13)
+    at /Users/jinfan/workplace/renderscore/renderscore/app/controller/home.js:31:43
+    at HomeController.page (/Users/jinfan/workplace/renderscore/renderscore/app/controller/home.js:24:81)
+    at Object.callFn (/Users/jinfan/workplace/renderscore/renderscore/node_modules/egg-core/lib/utils/index.js:36:21)
+    at Object.classControllerMiddleware (/Users/jinfan/workplace/renderscore/renderscore/node_modules/egg-core/lib/loader/mixin/controller.js:84:20)
+    at Object.callFn (/Users/jinfan/workplace/renderscore/renderscore/node_modules/egg-core/lib/utils/index.js:36:21)
+    at wrappedController (/Users/jinfan/workplace/renderscore/renderscore/node_modules/egg-core/lib/utils/router.js:322:18)
+    at dispatch (/Users/jinfan/workplace/renderscore/renderscore/node_modules/koa-router/node_modules/koa-compose/index.js:44:32)
+    at next (/Users/jinfan/workplace/renderscore/renderscore/node_modules/koa-router/node_modules/koa-compose/index.js:45:18)
+    at /Users/jinfan/workplace/renderscore/renderscore/node_modules/koa-router/lib/router.js:346:16
+
+pid: 37884
+hostname: jinfandeiMac.local
+
+2018-05-19 11:25:19,109 ERROR 37515 nodejs.ClusterClientNoResponseError: client no response in 60757ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout.Leader._heartbeatTimer.setInterval [as _onTimeout] (/Users/jinfan/workplace/renderscore/renderscore/node_modules/cluster-client/lib/leader.js:74:23)
+    at ontimeout (timers.js:475:11)
+    at tryOnTimeout (timers.js:310:5)
+    at Timer.listOnTimeout (timers.js:270:5)
+name: 'ClusterClientNoResponseError'
+pid: 37515
+hostname: jinfandeiMac.local
+
