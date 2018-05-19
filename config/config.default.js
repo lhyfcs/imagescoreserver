@@ -30,5 +30,11 @@ module.exports = appInfo => {
       'HDMaterial'
     ]
   }
+
+  config.security = {
+    csrf: {
+      enable: false,
+    },
+  };
   return config;
 };

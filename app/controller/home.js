@@ -24,20 +24,12 @@ class HomeController extends Controller {
     this.ctx.body = await this.getImages(this.ctx.service.database.getJobByPage)();
   }
 
+  
   getImages(func){
     return async () => {
       const { ctx } = this;
-
       const result = await func.bind(this)(ctx.params.id);
-      // const data = {list: result.map((image) => {
-      //   if (image.queueName.includes('panorama')){
-      //     let arr = image.imgS3Url.split('.');
-      //     arr.splice(-1, 0, 'front');
-      //     image.imgS3Url = arr.join('.');
-      //   }
-      //   return image;
-      // }), url: 'http://localhost:7001/v1/score/'};
-      const data = {list: result, url: 'http://localhost:7001/v1/score/'};
+      const data = {list: result, scoreUrl: 'http://localhost:7001/v1/score', pageUrl: 'http://localhost:7001/page/', index: ctx.params.id};
       return await ctx.renderView('home/index.tpl', data);
     }
   }

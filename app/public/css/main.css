@@ -10,3 +10,8 @@ input {
   width: 50px;
   margin: 0 10px;
 }
+
+button {
+  margin: 10px 20px;
+}
+

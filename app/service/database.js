@@ -23,6 +23,19 @@ class DatabaseService extends BaseService{
         // return this.ctx.app.mysql.query("select * from renderjob where created > ? and queueName not in (?) order by created ASC limit ?, ?", [mysql.startTime, , offset, mysql.pageCount]);
         return this.ctx.app.mysql.query(sql, [mysql.startTime, ...this.config.image.ignoretype, offset, mysql.pageCount]);
     }
+
+    async updateScores(list){
+        if (!list || list.length <= 0){
+            this.ctx.throw('Invalid image score data');
+        }
+        const mysql = this.config.mysql;
+        let promises = [];
+        list.forEach((item) => {
+            promises.push(this.ctx.app.mysql.query(DBUtil.getUpdateInsertSql('imagescore', item)));
+        });
+        await Promise.all(promises);
+        
+    }
 }
 
 module.exports = DatabaseService;
