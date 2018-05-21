@@ -17,7 +17,7 @@
       <tr>
             <td class="jobid">{{ item.uid }}</td>
             <td><img src={{ item.imgS3Url }}></img></td>
-            <td><input type="number" min="0" max="100">{{ item.score }}</td>
+            <td><input type="number" min="0" max="100" value={{ item.score }}></td>
             <td>{{ item.queueName }}</td>
             <td>{{ item.created }}</td>
       </tr>      

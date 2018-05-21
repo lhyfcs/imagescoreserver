@@ -84,13 +84,14 @@
       const table = document.getElementById('tbimage');
       const trs = table.getElementsByTagName('tr'); 
       let values = [];
+      const cur = Date.now();
       for(let i = 1; i < trs.length; i++){
         const td = trs[i].getElementsByTagName('td');
         let v = parseInt(td[2].firstChild.value);
         if (v > 100) v = 100;
         else if(v < 0) v = 0;
         else if (isNaN(v)) v = 70;
-        values.push({uid: td[0].innerHTML, score: v, imgUrl: td[1].firstChild.currentSrc, type: td[3].innerHTML, created: td[4].innerHTML});
+        values.push({uid: td[0].innerHTML, score: v, imgUrl: td[1].firstChild.currentSrc, type: td[3].innerHTML, created: td[4].innerHTML, updated: `${cur}`});
       }
       return values;
     }

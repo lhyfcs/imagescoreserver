@@ -4,10 +4,16 @@ const sqlString = require('./sqlstring');
 
 class DatabaseUtil {
     static getQueryImageNotInSql(arr){
-        let sql = "select * from renderjob where created > ? and queueName not in (";
+        // let sql = "select * from renderjob where created > ? and queueName not in (";
+        // arr.forEach((t) => sql += '?,');
+        // sql = sql.substr(0, sql.length - 1);
+        // sql += ") order by created ASC limit ?, ?";
+        // search use left join
+        // select r.uid, r.imgS3Url, r.queueName, r.created, i.score from renderjob r left join imagescore i on r.uid=i.uid where 
+        let sql = "select r.uid, r.imgS3Url, r.queueName, r.created, i.score from renderjob r left join imagescore i on r.uid=i.uid where r.created > ? and r.queueName not in (";
         arr.forEach((t) => sql += '?,');
         sql = sql.substr(0, sql.length - 1);
-        sql += ") order by created ASC limit ?, ?";
+        sql += ") order by r.created ASC limit ?, ?";
         return sql;
     }
 
@@ -38,7 +44,7 @@ class DatabaseUtil {
         }
 
         let sql = sqlString.format('INSERT INTO ??(??) VALUES' + strs.join(', '), params);
-        sql += ` ON DUPLICATE KEY UPDATE score=${objs[0].score}`;
+        sql += ` ON DUPLICATE KEY UPDATE score=${objs[0].score},updated='${objs[0].updated}'`;
         return sql;
     }
 }
